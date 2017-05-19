@@ -14,7 +14,7 @@ for ElbDocument in ElbClient.describe_load_balancers()['LoadBalancerDescriptions
             if SgCidr['CidrIp'] == "0.0.0.0/0":
                 print(ElbDocument['LoadBalancerName'])
                 print(SgCidr['CidrIp'])
-            print("\n")
+                print("\n")
         # break
 
 
